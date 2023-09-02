@@ -22,12 +22,12 @@ const localVideo = document.getElementById('localVideo');
          let pId;
          
         function initializePeer() {
-            peer = new Peer(); // You can add your own PeerJS API key here
+            peer = new Peer();
             
             peer.on('open', peerId => {
                 console.log('My peer ID:', peerId);
                 pId=peerId;
-                window.alert(peerId);
+               
             });
             
             peer.on('call', incomingCall => {
@@ -100,15 +100,15 @@ const localVideo = document.getElementById('localVideo');
         }
       
         document.getElementById("sendButton").addEventListener("click", sendEmail);
-       // Define peerId in a shared scope
+      
 
       
 
        function sendEmail() {
         const recipientEmail = document.getElementById("recipientEmail").value;
         const linkUrl = "https://surenda15.github.io/index.html/";
-        const subject = encodeURIComponent("Hey Whatsapp, Happy to see you again");
-        const bodyText = `PeerID to connect the call: ${pId}\n\nClick the link to visit: ${linkUrl}`;
+        const subject = encodeURIComponent("Hey! What's Up?, Happy to see you again");
+        const bodyText = `PeerID to connect the call: ${pId}\n\n  Click the link to visit: ${linkUrl}`;
         const body = encodeURIComponent(bodyText);
         
         const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
@@ -130,4 +130,19 @@ const localVideo = document.getElementById('localVideo');
             }
         });
     });
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButton = document.getElementById("dropdownButton1");
+        const dropdownMenu = document.getElementById("dropdownMenu1");
+    
+        dropdownButton.addEventListener("click", function () {
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        });
+    
+        document.addEventListener("click", function (event) {
+            if (!dropdownButton.contains(event.target)) {
+                dropdownMenu.style.display = "none";
+            }
+        });
+    });
+
     
