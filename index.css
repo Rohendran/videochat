@@ -6,7 +6,7 @@ body{
    background-color:#001C30;
 }
 .heading{
-    background-color: #163a538a;
+    background-color: #1d4d6f8a;
     color: white;
     justify-content: left;
     display:flex;
@@ -14,14 +14,14 @@ body{
     align-items: center;
     padding-left: 70px;
     margin: 0px;
-    font-size:;
+    
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
 .icon-heading{
     font-size: 30px;
     margin-right: 7px;
     }
 .heading-button{
-   margin-left: 60px;
+   margin-left: 600px;
    }    
 .How {
     border-radius: 50px;
@@ -41,34 +41,59 @@ body{
     padding: 4px;
     transition: .3s;
 }
-.invite1{
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: whitesmoke;
-    color:#001C30;
-    border: none;
-    padding: 4px;
-    transition: .3s;
-    margin-left: 5px;
-}
-.How:hover,.Help:hover,.invite1:hover{
+
+.How:hover,.Help:hover{
     color: whitesmoke;
     background-color:#001C30;
 }
-
+.video{
+    margin-top: 13px;
+}
 .buttons{
     
     align-items: bottom;
     flex-direction: row;
     justify-content: center;
     display: flex;
-    
-    margin-top: 40px;
-    
-    
-    
- 
+     margin-top: 60px;
+      }
+    .invite{
+        position: absolute;
+        bottom: 3%;
+        right:3%;
+        padding-bottom:12px;
+
+      
+      }
+    .email{
+       
+        width: 250px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color:  #1d4d6f8a;
+        padding-left: 15px;
+        color:white ;
+        font-size: 15px;
     }
+    .invite2{
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        width:50px;
+        background-color:  #1d4d6f8a;
+        color: grey;
+        transition: .3s;
+        font-size: 15px;
+
+    }
+    .invite2:hover{
+        background-color:white ;
+        color:#001C30 ;
+    }
+       
+        
+    
     .fa-solid{
         font-size: 25px;
         border-radius: 15px;
@@ -77,27 +102,22 @@ body{
         box-shadow: 2px 2px 2px black;
         margin-left: 10px;
     }
-    
-    
-
-    
-    
-.video{
+    .invite1{
+      margin-left: -2%;
+     }
+ .video{
      display:flex;
      justify-content: center;
      align-items: center;
      height: 425px;
-     
-     padding-top: 30px;
-     
-    
-}
-.dropdown {
+ padding-top: 30px;
+     }
+.dropdown ,.dropdown1,.dropdown2{
     position: relative;
     display: inline-block;
 }
 
-.dropdown-toggle {
+.dropdown-toggle ,.dropdown-toggle1 {
     border-radius: 7px;
     background-color:white;
     color:#001C30 ;
@@ -108,7 +128,7 @@ body{
    
 }
 
-.dropdown-menu {
+.dropdown-menu ,.dropdown-menu1{
     position: absolute;
     top: 100%;
     left: 0;
@@ -118,18 +138,21 @@ body{
     list-style: none;
     padding:0;
     margin-top: 14px;
-    width: 500px;
+    width: 400px;
     color:white;
     border-radius: 10px;
 }
 
-.dropdown-menu li {
+
+.dropdown-menu li,.dropdown-menu1 li {
     padding: 10px;
 }
 
-.dropdown-menu a {
+.dropdown-menu a,.dropdown-menu1 a {
     text-decoration: none;
     color: white;
 }
 
 
+
+   
